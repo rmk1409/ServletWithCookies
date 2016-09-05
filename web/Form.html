@@ -9,8 +9,17 @@
     Write your name, we'll try to remember it.
     <hr>
     <form action = "MyServlet" method="post">
-        NAME:<input type="text" name="userName"><br>
-        <input type="submit" value="send">
+        <table>
+            <tr>
+                <td><b>Name:</b></td>
+                <td><input type="text" name="userName"></td>
+            </tr>
+            <tr>
+                <td align="right" colspan="2">
+                    <input type="submit" value="Send">
+                </td>
+            </tr>
+        </table>
         <hr>
     </form>
 </body>

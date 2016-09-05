@@ -24,7 +24,7 @@ public class MyServlet extends HttpServlet {
 
         PrintWriter writer = response.getWriter();
         writer.printf("<h3>Hello %s</h3>", userName);
-        writer.println("Try to reopen browser and come here,  we'll remember you for 2 min");
+        writer.println("Try to reopen browser and come here,  we'll remember you <b>for 2 min</b>");
 
     }
 
@@ -37,7 +37,7 @@ public class MyServlet extends HttpServlet {
         if (cookies != null) {
             PrintWriter writer = response.getWriter();
             writer.printf("<h3>Hello %s</h3>", cookies[0].getValue());
-            writer.println("As you can see, we can recall you");
+            writer.println("As you can see, we can recognize you");
         } else {
             getServletContext().getRequestDispatcher("/Form.html").forward(request, response);
         }
